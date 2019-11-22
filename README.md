@@ -19,7 +19,8 @@ RUN apt-get update -y
 ### Installation
 
 1. Install [Docker](https://www.docker.com/).
-   docker build -t redis/ubuntu:latest .
+    
+   eg：docker build -t redis/ubuntu:latest .
 
 
 ### Usage
