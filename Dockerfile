@@ -1,7 +1,7 @@
 #
 # Redis Dockerfile
 #
-# https://github.com/dockerfile/redis
+# https://www.cnblogs.com/phoenixhuang/p/4218171.html
 #
 
 # Pull base image.
@@ -10,6 +10,10 @@ FROM ubuntu:16.04
 RUN apt-get install -y
 RUN apt-get update --fix-missing -y
 RUN apt-get install wget -y
+
+RUN apt-get install gcc -y
+RUN apt-get install build-essential -y
+RUN apt-get update -y
 # RUN wget --version
 
 # Install Redis.
