@@ -7,8 +7,9 @@
 # Pull base image.
 
 FROM ubuntu:16.04
-RUN apt-get update
-RUN apt-get install wget
+RUN apt-get install -y
+RUN apt-get update --fix-missing -y
+RUN apt-get install wget -y
 # RUN wget --version
 
 # Install Redis.
